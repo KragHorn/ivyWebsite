@@ -1,0 +1,247 @@
+/* custome color pallet
+logo hsl color match {145 100 19.2}
+*/
+
+:root {
+    --main-hue: 145;
+    --main-color: hsl(var(--main-hue) 100% 19.2%);
+    --main-color-light: hsl(var(--main-hue) 100% 81%);
+    --main-color-med: hsl(var(--main-hue) 100% 60%);
+    --main-color-dark: hsl(var(--main-hue) 100% 8%);
+    --main-color-hover: hsl(var(--main-hue) 100% 15%);
+    --main-color-darker: hsl(var(--main-hue) 100% 0%);
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav a {
+    position: relative;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 16pt;
+    font-weight: bolder;
+    letter-spacing: .5px;
+    padding: 0 10px;
+}
+
+.nav a:visited {
+    text-decoration: none;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transform: scale(0, 1);
+    transition: .3s ease;
+}
+
+.nav a:hover::after {
+    transform: scale(1, 1);
+}
+
+.bkground {
+    position: relative;
+    filter: drop-shadow(0px 20px 20px var(--main-color-darker));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/bkground2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: auto;
+}
+
+.nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.smallLogo {
+    margin-left: 20px;
+    width: 75px;
+    height: auto;
+}
+
+.menuLogo {
+    width: 100%;
+    height: auto;
+}
+
+.menuItems {
+    width: 100%;
+    height: auto;
+    padding-right: 20px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.menu {
+    padding: 20px;
+    color: #6EAC86;
+}
+
+.logoContainer {
+    /* background-color: rgba(210, 210, 210, .5); */
+    filter: drop-shadow(10px 10px 20px var(--main-color-darker));
+}
+
+.logo {
+    height: 200px;
+    width: auto;
+}
+
+.stylest-area {
+    width: 100%;
+    height: 500px;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    filter: drop-shadow(10px 10px 20px var(--main-color));
+}
+
+.stylest-card {
+    width: 250px;
+    height: fit-content;
+    background-color: var(--main-color-light);
+    border: 1px solid var(--main-color-dark);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: .5rem; */
+    /* margin: 2rem 1rem 2rem 1rem; */
+    filter: drop-shadow(10px 10px 5px var(--main-color-dark));
+}
+
+.stylest-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stylest-image {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 1em;
+}
+
+.profile-image {
+    width: 100%;
+}
+
+.stylest-name {
+    padding: .5rem;
+}
+
+.stylest-spec {
+    padding: .5rem
+}
+
+.stylest-about {
+    color: var(--main-color-dark);
+    padding: 2em 1em;
+}
+
+.stylest-text {
+    font-size: .75em;
+}
+
+.stylest-area h3 {
+    color: var(--main-color-dark);
+    font-weight: bold;
+}
+
+.stylest-area h4 {
+    color: var(--main-color-dark);
+    font-weight: bold;
+}
+
+.store-info {
+    background-color: var(--main-color-med);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.stylest-area a {
+    text-decoration: none;
+    background-color: var(--main-color-dark);
+    color: var(--main-color-light);
+    border: 1px solid var(--main-color-darker);
+    border-radius: 3px;
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    filter: drop-shadow(5px 5px 10px var(--main-color-darker));
+}
+
+.stylest-area a:hover:focus {
+    background-color: var(--main-color-hover);
+}
+
+.info-grid {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-grid h1 {
+    text-shadow: 5px 5px 10px var(--main-color);
+}
+
+.info-grid h3 {
+    text-shadow: 5px 5px 10px var(--main-color);
+}
+
+.info-grid h4 {
+    text-shadow: 5px 5px 10px var(--main-color);
+}
+
+.info-grid h5 {
+    text-shadow: 5px 5px 10px var(--main-color);
+}
+
+.directions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.map-frame {
+    filter: drop-shadow(10px 10px 20px var(--main-color));
+    border-radius: 10px;
+}
