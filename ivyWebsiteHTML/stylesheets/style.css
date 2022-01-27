@@ -259,6 +259,7 @@ table {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 500px;
     }
     .social-media {
         margin-bottom: 1em;
