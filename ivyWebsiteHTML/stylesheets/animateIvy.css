@@ -1,0 +1,129 @@
+body {
+    background-color: black;
+}
+
+.main-container {}
+
+.ivy-logo-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logoSvg {
+    width: 40vw;
+    height: auto;
+    animation: logoBounce 1.5s ease-in-out forwards;
+    animation-delay: 4s;
+}
+
+.mask {
+    fill: black;
+}
+
+#ivy {
+    stroke-dasharray: 6000;
+    stroke-dashoffset: 6000;
+    animation: dash 2s linear forwards;
+}
+
+#outline {
+    stroke-dasharray: 15000;
+    stroke-dashoffset: 15000;
+    animation: outlineDash 2.5s linear forwards;
+    animation-delay: 2s;
+}
+
+#background {
+    fill: black;
+    animation: backGround 1.5s ease-in-out forwards;
+    animation-delay: 4s;
+}
+
+#leaf {
+    /* transform: translate(-100px, -3000px); */
+    offset-path: path("M3721.5 283C3384.83 602.667 1600 1217.1 768 833.5C-64 449.9 137 1414 621.5 1666.5C1264.5 2146.33 2713.03 1877.22 3282.5 1510C3893.5 1116 4272 2227 3343 2555C2442.67 2928.67 1422.95 2877.55 899.5 2530C283.5 2121 218 3019.5 561 3171C761.333 3290.67 1233.7 3485.5 1520.5 3307.5");
+    animation: floatLeaf 6s infinite;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes outlineDash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes floatLeaf {
+    to {
+        motion-offset: 100%;
+        offset-distance: 100%;
+        /* top: -100vw; */
+        /* left: 20vw; */
+        /* width: 8% */
+        /* transform: translate(0px, 0px); */
+        /* transform: rotate(320deg); */
+        /* transform-origin: 50%, 50%; */
+    }
+    /* 25% {
+        left: 60vw;
+    }
+    50% {
+        left: 25vw;
+    }
+    75% {
+        left: 55vw;
+    }
+    100% {
+        left: 37vw;
+    } */
+}
+
+@keyframes backGround {
+    0% {
+        fill: transparent;
+    }
+    25% {
+        fill: rgb(0, 98, 41);
+    }
+    50% {
+        fill: transparent;
+    }
+    75% {
+        fill: rgb(11, 245, 112)
+    }
+    100% {
+        fill: rgb(0, 98, 41);
+    }
+}
+
+@keyframes logoBounce {
+    0% {
+        width: 30vw;
+        height: auto;
+    }
+    25% {
+        width: 50vw;
+        height: auto;
+    }
+    50% {
+        width: 30vw;
+        height: auto;
+    }
+    75% {
+        width: 75vw;
+        height: auto;
+    }
+    100% {
+        width: 30vw;
+        height: auto;
+    }
+}

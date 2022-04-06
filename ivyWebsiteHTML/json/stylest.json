@@ -1,0 +1,39 @@
+{
+    "stylest": [{
+            "id": 0,
+            "firstName": "Matthan",
+            "lastName": "Ivy",
+            "spec": "Master Barber",
+            "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem sunt reprehenderit molestiae voluptatem, optio deserunt eum eveniet vero quos reiciendis vel rem, accusantium quisquam! Blanditiis fugiat voluptatem possimus eveniet.",
+            "bookingLink": "https://www.styleseat.com/m/v/WEWANTIVY?matchedServiceId=2233907&proId=1012190&serviceId=2233907&sid=SEARCH-956b3811-f23f-4916-adba-b61c421fa0b4",
+            "image": "ivy pic.jpg"
+        },
+        {
+            "id": 1,
+            "firstName": "Superman",
+            "lastName": "",
+            "spec": "Apprentice",
+            "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem sunt reprehenderit molestiae voluptatem, optio deserunt eum eveniet vero quos reiciendis vel rem, accusantium quisquam! Blanditiis fugiat voluptatem possimus eveniet.",
+            "bookingLink": "https://www.styleseat.com/m/v/WEWANTIVY?matchedServiceId=2233907&proId=1012190&serviceId=2233907&sid=SEARCH-956b3811-f23f-4916-adba-b61c421fa0b4",
+            "image": "stylest1.jpg"
+        },
+        {
+            "id": 2,
+            "firstName": "Wolverine",
+            "lastName": "",
+            "spec": "Hair Dresser",
+            "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "bookingLink": "https://www.styleseat.com/m/v/WEWANTIVY?matchedServiceId=2233907&proId=1012190&serviceId=2233907&sid=SEARCH-956b3811-f23f-4916-adba-b61c421fa0b4",
+            "image": "stylest2.jpg"
+        },
+        {
+            "id": 3,
+            "firstName": "Steve",
+            "lastName": "Rogers",
+            "spec": "Wigs and Weaves",
+            "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem sunt reprehenderit molestiae voluptatem, optio deserunt eum eveni",
+            "bookingLink": "https://www.styleseat.com/m/v/WEWANTIVY?matchedServiceId=2233907&proId=1012190&serviceId=2233907&sid=SEARCH-956b3811-f23f-4916-adba-b61c421fa0b4",
+            "image": "stylest3.jpg"
+        }
+    ]
+}

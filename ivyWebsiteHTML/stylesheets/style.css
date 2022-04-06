@@ -58,6 +58,7 @@ logo hsl color match {145 100 19.2}
 
 .nav a:visited {
     text-decoration: none;
+    color: var(--main-color-hover);
 }
 
 .bkground {
@@ -90,6 +91,51 @@ logo hsl color match {145 100 19.2}
     /* filter: drop-shadow(10px 10px 20px var(--main-color)); */
 }
 
+.arrow {
+    top: 50%;
+    height: 5vw;
+    width: 5vw;
+}
+
+.stylest-area #left,
+#right {
+    /* top: 50%; */
+    font-size: 5vw;
+    cursor: pointer;
+}
+
+.stylest-area #left {
+    display: none;
+    color: var(--main-color-med);
+}
+
+.stylest-area #right {
+    color: var(--main-color-med);
+}
+
+.stylest-area #left:hover,
+#right:hover {
+    color: var(--main-color-hover);
+}
+
+.card-animation {
+    height: 350px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    filter: drop-shadow(10px 10px 5px var(--main-color-dark));
+}
+
+.card-container {
+    position: relative;
+    height: 350px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 400ms ease-in-out;
+}
+
 .stylest-card {
     height: 350px;
     width: 500px;
@@ -100,8 +146,7 @@ logo hsl color match {145 100 19.2}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow(10px 10px 5px var(--main-color-dark));
-    position: relative;
+    position: absolute;
 }
 
 .stylest-image {
@@ -109,6 +154,7 @@ logo hsl color match {145 100 19.2}
     top: 10px;
     left: 10px;
     width: 250px;
+    height: 295px;
     border-radius: 3px;
     overflow: hidden;
     margin: 1em;
@@ -181,8 +227,8 @@ logo hsl color match {145 100 19.2}
 
 .store-info {
     background-image: url("/images/pole2.jpg");
-    background-position: initial;
-    background-size: cover;
+    background-position: center;
+    background-size: 60%;
     background-repeat: repeat;
     height: 400px;
     display: flex;
@@ -198,6 +244,7 @@ logo hsl color match {145 100 19.2}
 h3,
 h4,
 table {
+    font-weight: bolder;
     color: var(--main-color);
     filter: drop-shadow(2px 2px 20px var(--main-color-darker));
 }
@@ -234,16 +281,24 @@ table {
     text-decoration: none;
 }
 
-@media only screen and (max-width:530px) {
+@media only screen and (max-width:600px) {
     .nav {
         display: none;
     }
     .stylest-area {
+        height: 700px;
+    }
+    .card-animation {
         height: 650px;
+        width: 300px;
+    }
+    .card-container {
+        height: 650px;
+        width: 300px;
     }
     .stylest-card {
         width: 300px;
-        height: 600px;
+        height: 650px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;

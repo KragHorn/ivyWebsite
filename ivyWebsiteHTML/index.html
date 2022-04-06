@@ -2,9 +2,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <link rel="stylesheet" href="./stylesheets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" integrity="sha512-rQgMaFKZKIoTKfYInSVMH1dSM68mmPYshaohG8pK17b+guRbSiMl9dDbd3Sd96voXZeGerRIFFr2ewIiusEUgg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script type="text/javascript" src="./js/cardPopulate.js"></script>
 </head>
 <html>
 
@@ -28,38 +32,24 @@
     </div>
     <div class="bkground">
         <div class="logoContainer">
-            <img src="/images/ivy2.png" alt="" class="logo">
+            <img src="./images/backGround.svg" alt="" class="logo">
         </div>
     </div>
 
 
-    <div class="stylest-area">
-        <div class="stylest-card">
-            <div class="stylest-image">
-                <img class="profile-image" src="/images/ivyStylest.jpg" alt="Ivy">
-            </div>
-            <div class="stylest-info">
-                <ul class="side-card">
-                    <li class="stylest-name" id="name">
-                        <h3>Matthan Ivy</h3>
-                    </li>
+    <div class="stylest-area" id="stylest-area">
+        <div class="arrow">
+            <i class="fas fa-arrow-circle-left" id="left"></i>
+        </div>
+        <div class="card-animation">
 
-                    <li class="stylest-about">
-                        <p class="stylest-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quidem sunt reprehenderit molestiae voluptatem, optio deserunt eum eveniet vero quos reiciendis vel rem, accusantium quisquam! Blanditiis fugiat voluptatem possimus
-                            eveniet.
-                        </p>
-                    </li>
-                    <div class="book-link">
-                        <a href=" https://www.styleseat.com/m/v/WEWANTIVY?matchedServiceId=2233907&proId=1012190&serviceId=2233907&sid=SEARCH-956b3811-f23f-4916-adba-b61c421fa0b4 ">BOOK</a>
-                    </div>
-
-                </ul>
-            </div>
-            <div class="stylest-spec">
-                <h6>Master Barber</h6>
+            <div class="card-container" id="card-container">
+                <!-- populate with javascript -->
             </div>
         </div>
-
+        <div class="arrow">
+            <i class="fas fa-arrow-circle-right" id="right"></i>
+        </div>
     </div>
     <div class="store-info ">
         <div class="info-grid ">
@@ -77,48 +67,37 @@
                 </caption>
 
                 <tr>
-                    <td>
-                        Monday
-                    </td>
-                    <td>
-                        Closed
-                    </td>
+                    <td>Monday</td>
+                    <td>Closed</td>
                 </tr>
                 <tr>
-                    <td>
-                        Tuesday
-                    </td>
+                    <td>Tuesday</td>
                     <td>7AM - 6PM</td>
                 </tr>
                 <tr>
-                    <td>
-                        Wednesday
-                    </td>
+                    <td>Wednesday</td>
                     <td>7AM -6PM</td>
                 </tr>
                 <tr>
-                    <td>
-                        Thurday
-                    </td>
+                    <td>Thurday</td>
                     <td>7AM -6PM</td>
                 </tr>
                 <tr>
-                    <td>
-                        Friday
-                    </td>
+                    <td>Friday</td>
                     <td>7AM -6PM</td>
                 </tr>
                 <tr>
-                    <td>
-                        Satday
-                    </td>
+                    <td>Satday</td>
                     <td>7AM -6PM</td>
                 </tr>
                 <tr>
-                    <td>
-                        Sunday
-                    </td>
+                    <td>Sunday</td>
                     <td>Closed</td>
+                </tr>
+
+                <tr>
+                    <td>Phone:</td>
+                    <td>(912) 748-6492</td>
                 </tr>
             </table>
         </div>
@@ -135,6 +114,14 @@
         </div>
 
     </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', e => {
+
+            const loadScript = document.createElement('script');
+            loadScript.src = './js/main.js';
+            document.body.appendChild(loadScript);
+        })
+    </script>
 
 </body>
 
